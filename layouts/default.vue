@@ -23,6 +23,7 @@ export default {
 }
 body{
   font-family: 'Quicksand', sans-serif;
+  margin: 0;
 }
 .main-content{
   margin-top: 5rem;

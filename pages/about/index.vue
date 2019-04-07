@@ -1,5 +1,5 @@
 <template>
-   <section id="about-page">
+   <section id="about-page" v-editable="blok">
        <h1>{{ title }}</h1>
        <p>{{ content }}</p>
    </section>
@@ -13,6 +13,7 @@ export default {
             version: 'draft'
         }).then(res => {
             return {
+                blok: res.data.story.content,
                 title: res.data.story.content.title,
                 content: res.data.story.content.content
             }
@@ -32,6 +33,7 @@ export default {
 #about-page p{
     white-space: pre-line;
 }
+
 </style>
 
 
