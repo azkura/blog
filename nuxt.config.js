@@ -41,8 +41,14 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
+
+    // storyblok config
+    [ 
+      "storyblok-nuxt", 
+      { accessToken:"mrTgqb8PhauQr1YGRFaJJgtt", cacheProvider:"memory"}
+    ]
    
   ],
   /*
