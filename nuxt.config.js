@@ -41,13 +41,13 @@ export default {
     // CMS storyblok modudes
     [ 
       "storyblok-nuxt", 
-      { accessToken: process.env.NODE_ENV == "production" ? "Q8XoHn2JU5Wyr49Xdm7jlQtt" :
-      " mrTgqb8PhauQr1YGRFaJJgtt", cacheProvider:"memory"}
+      { accessToken: process.env.NODE_ENV == "production" ? "HNrs9J7ik1s2F3dFoGBqNwtt" :
+      "mrTgqb8PhauQr1YGRFaJJgtt", cacheProvider:"memory"}
     ]
   ],
   generate:{
     routes(){
-      return axios.get("https://api.storyblok.com/v1/cdn/stories?version=published&token=Q8XoHn2JU5Wyr49Xdm7jlQtt&starts_with=blog&cv="
+      return axios.get("https://api.storyblok.com/v1/cdn/stories?version=published&token=HNrs9J7ik1s2F3dFoGBqNwtt&starts_with=blog&cv="
       + Math.floor(Date.now() / 1e3)
       ).then(res => {
         const blogPosts = res.data.stories.map(bp => bp.full_slug)
