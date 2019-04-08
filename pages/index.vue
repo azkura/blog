@@ -21,7 +21,7 @@ export default {
 
   asyncData(context){
     return context.app.$storyapi.get("cdn/stories",{
-      version: "draft", starts_with: "blog/"
+      version: context.isDev ? "draft" : 'published', starts_with: "blog/"
     }).then(res => {
       return  {
         posts: res.data.stories.map( bp => {
