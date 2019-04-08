@@ -17,7 +17,7 @@
     left: 0;
     width: 100%;
     background: #06456B;
-    height: 4.5rem;
+    height: 4.6rem;
 }
 .main-nav{
     height: 100%;
