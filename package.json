@@ -20,6 +20,8 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
+    "bootstrap": "4.3.1",
+    "bootstrap-scss": "4.3.1",
     "bootstrap-vue": "^2.0.0-rc.18",
     "cross-env": "^5.2.0",
     "node-sass": "^4.11.0",

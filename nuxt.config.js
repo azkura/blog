@@ -53,6 +53,8 @@ export default {
     '@nuxtjs/axios',
 
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
+    'bootstrap-vue/nuxt',
+
 
     // CMS storyblok modudes
     [ 
