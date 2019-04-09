@@ -31,5 +31,6 @@ body{
 }
 .main-content{
   margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 </style>

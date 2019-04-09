@@ -66,6 +66,7 @@ export default {
   align-items: center;
   flex-direction: column;
 }
+
 @media (min-width: 35rem){
   #post{
     flex-direction: row;

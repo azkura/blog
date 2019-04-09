@@ -1,39 +1,39 @@
 <template>
-<nav  class="main-review">
-    <h1>{{ title}}</h1>
-     <ul class="review-link-tags">
-        <nuxt-link tag="li" to="/blog" class="review-link"><a>> Blog</a></nuxt-link>
-        <nuxt-link tag="li" to="/blog" class="review-link"><a>> All post</a></nuxt-link>
-        <nuxt-link tag="li" to="/about" class="review-link"><a>> About</a></nuxt-link>
-    </ul>
-</nav>
+<footer>
+    <nav  class="main-review">
+        <ul class="review-link-tags">
+            <nuxt-link tag="li" to="/blog" class="review-link"><a> > Blog </a></nuxt-link>
+            <nuxt-link tag="li" to="/blog" class="review-link"><a> > All post </a></nuxt-link>
+            <nuxt-link tag="li" to="/about" class="review-link"><a> > About </a></nuxt-link>
+        </ul>
+    </nav>
+</footer>
 </template>
 
-<script scoped>
+<script>
 export default {
-    props:{
-         title: {
-        type: String,
-        required: true
-        }
-    }
 }
 
 </script>
 
-<style>
-.main-review, h1{
+<style scoped>
+
+.main-review{
     font-weight: bolder;
-    position: relative;
-    display: list-item;
-    list-style-position: inside;
 }
 
-
 .review-link{
-    margin: 1rem;
-    text-decoration: none;
-    color: white;
+    margin: 0.5rem;
+    list-style: none; 
+}
+
+.review-link a{
+     color: white;
+}
+
+.review-link a:hover,
+.review-link.nuxt-link-active a{
+    color:tomato;
 }
 
 </style>
