@@ -20,10 +20,13 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
+    "bootstrap-vue": "^2.0.0-rc.18",
     "cross-env": "^5.2.0",
+    "node-sass": "^4.11.0",
     "nuxt": "^2.4.0",
     "nuxt-fontawesome": "^0.4.0",
-    "storyblok-nuxt": "^1.0.1"
+    "storyblok-nuxt": "^1.0.1",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
