@@ -1,22 +1,31 @@
 <template>
-    <section id="post">
-      <PostPreview
-      v-for="post in posts" 
-      :key="post.id"
-      :title="post.title"
-      :excerpt="post.previewText"
-      :thumbnailImage="post.thumbnailUrl"
-      :id="post.id"/>
-    </section>
+  <section>
+      <section id="news">
+        <BlogNews />
+       
+      
+      </section>
+      <section id="post">
+        <PostPreview
+        v-for="post in posts" 
+        :key="post.id"
+        :title="post.title"
+        :excerpt="post.previewText"
+        :thumbnailImage="post.thumbnailUrl"
+        :id="post.id"/>
+      </section>
+  </section>
 </template>
 
 <script>
 
+import BlogNews from '~/components/BlogNews/BlogNews'
 import PostPreview from '~/components/blog/PostPreview'
 
 export default {
 
   components:{
+    BlogNews,
     PostPreview
   },
 
@@ -58,7 +67,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 #post{
   padding-top: 3rem;

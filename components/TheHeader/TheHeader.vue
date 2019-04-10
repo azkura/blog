@@ -33,7 +33,7 @@
     left: 0;
     width: 100%;
     /*  background: #06456B;*/
-    background-color: rgba(34, 139, 34, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 3rem;
 }
 

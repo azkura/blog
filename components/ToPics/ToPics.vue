@@ -19,7 +19,7 @@
     display:flex;
     justify-content: center; 
     align-items: center;  
-    margin: 4rem;
+    margin: 2rem;
     padding: 1rem;
     height: 100%;
 }

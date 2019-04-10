@@ -2,6 +2,7 @@
   <div>
     <TheHeader />
     <ToPics />
+<!--    <CarouSsel /> -->
     <main class="main-content">
     <nuxt />
     </main>
@@ -11,6 +12,8 @@
 </template>
 
 <script>
+
+import CarouSsel from '~/components/CarouSsel/CarouSsel'
 import ToPics from '~/components/ToPics/ToPics'
 import EndFoot from '~/components/EndFoot/EndFoot'
 
@@ -22,7 +25,8 @@ export default {
     TheHeader,
     TheFooter,
     EndFoot,
-    ToPics
+    ToPics,
+    CarouSsel
   }
 }
 </script>

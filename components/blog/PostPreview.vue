@@ -63,6 +63,7 @@ a{
     text-align: center;
     padding: 1rem;
 }
+
 @media (min-width: 35rem){
     .post-preview{
         width: 25rem;
