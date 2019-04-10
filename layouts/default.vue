@@ -1,6 +1,7 @@
 <template>
   <div>
     <TheHeader />
+    <ToPics />
     <main class="main-content">
     <nuxt />
     </main>
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import ToPics from '~/components/ToPics/ToPics'
 import EndFoot from '~/components/EndFoot/EndFoot'
 
 import TheHeader from '~/components/TheHeader/TheHeader'
@@ -19,7 +21,8 @@ export default {
   components:{
     TheHeader,
     TheFooter,
-    EndFoot
+    EndFoot,
+    ToPics
   }
 }
 </script>
