@@ -1,16 +1,17 @@
 <template>
-  <section id="post">
-    <PostPreview
-    v-for="post in posts" 
-    :key="post.id"
-    :title="post.title"
-    :excerpt="post.previewText"
-    :thumbnailImage="post.thumbnailUrl"
-    :id="post.id"/>
-  </section>
+    <section id="post">
+      <PostPreview
+      v-for="post in posts" 
+      :key="post.id"
+      :title="post.title"
+      :excerpt="post.previewText"
+      :thumbnailImage="post.thumbnailUrl"
+      :id="post.id"/>
+    </section>
 </template>
 
 <script>
+
 import PostPreview from '~/components/blog/PostPreview'
 
 export default {
@@ -65,6 +66,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ /* background-image: url('@/assets/img/appetizing.jpeg'); */
 }
 
 @media (min-width: 35rem){

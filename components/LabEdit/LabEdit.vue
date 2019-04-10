@@ -4,12 +4,3 @@
 </div>  
 </template>
 
-<style scoped>
-
-.label-content{
-    color: white;
-    font-weight: bolder;
-}
-    
-</style>
-

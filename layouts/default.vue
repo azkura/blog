@@ -4,11 +4,13 @@
     <main class="main-content">
     <nuxt />
     </main>
-    <TheFooter />
+  <TheFooter /> 
+  <EndFoot />
   </div>
 </template>
 
 <script>
+import EndFoot from '~/components/EndFoot/EndFoot'
 
 import TheHeader from '~/components/TheHeader/TheHeader'
 import TheFooter from '~/components/TheFooter/TheFooter'
@@ -16,7 +18,8 @@ import TheFooter from '~/components/TheFooter/TheFooter'
 export default {
   components:{
     TheHeader,
-    TheFooter
+    TheFooter,
+    EndFoot
   }
 }
 </script>
