@@ -1,30 +1,30 @@
 <template>
 <nuxt-link :to="'/blog/' +id"
-        class="blog-news">
-    <section>
-        <div class="news-img"
-        :style="{ backgroundImage: 'url('+ newsImg +')' }">
-            <div class="news-content">
-                <h3>{{ Maincontent }}</h3>
-                <p>{{ newsContent }}</p>
+        class="post-featured">
+    <article>
+        <div class="featured-img"
+        :style="{ backgroundImage: 'url('+ featImg +')' }">
+            <div class="featured-content">
+                <h3>{{ title }}</h3>
+                <p>{{ Content }}</p>
             </div>  
         </div>
-    </section>
+    </article>
 </nuxt-link>
 </template>
 
 <script>
 export default {
     props:{
-        newsImg:{
+        featImg:{
             type: String,
             required: true
         },
-        Maincontent:{
+        title:{
             type: String,
             required:true
         },
-        newsContent:{
+        Content:{
             type: String,
             required: true
         },

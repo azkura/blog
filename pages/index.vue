@@ -1,31 +1,35 @@
 <template>
-  <section>
-      <section id="news">
-        <BlogNews />
-       
-      
-      </section>
-      <section id="post">
-        <PostPreview
-        v-for="post in posts" 
-        :key="post.id"
-        :title="post.title"
-        :excerpt="post.previewText"
-        :thumbnailImage="post.thumbnailUrl"
-        :id="post.id"/>
-      </section>
-  </section>
+<section>
+  <header id="featured">
+    <TheFeatured 
+    v-for="feat in feats"
+    :key="feat.id"
+    :id="feat.id"
+    :featImg="feat.featImg"
+    :title="feat.title"
+    :Content="feat.Content"/>
+  </header>
+  <article id="post">
+    <PostPreview
+    v-for="post in posts" 
+    :key="post.id"
+    :title="post.title"
+    :excerpt="post.previewText"
+    :thumbnailImage="post.thumbnailUrl"
+    :id="post.id"/>
+  </article>
+</section>
 </template>
 
 <script>
 
-import BlogNews from '~/components/BlogNews/BlogNews'
+import TheFeatured from '~/components/TheFeatured/TheFeatured'
 import PostPreview from '~/components/blog/PostPreview'
 
 export default {
 
   components:{
-    BlogNews,
+    TheFeatured,
     PostPreview
   },
 
@@ -40,6 +44,14 @@ export default {
             title: bp.content.title,
             previewText: bp.content.summary,
             thumbnailUrl: bp.content.thumbnail,
+          }
+        }),
+        feats: res.data.stories.map( bf => {
+          return {
+            id: bf.slug,
+            title: bf.content.title,
+            content: bf.content.content,
+            featImg: bf.content.thumbnail
           }
         })
       }
@@ -65,6 +77,7 @@ export default {
     }
   }*/
 }
+
 </script>
 
 <style>
